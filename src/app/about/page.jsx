@@ -12,7 +12,7 @@ export const metadata = {
 };
 
 const getLocalTime = async () => {
-    const res = await fetch('http://localhost:3000/time', { next: {revalidate: 5} });
+    const res = await fetch('http://localhost:3000/time', { cache: 'no-store' });
     const data = await res.json();
     return data.currentTime;
 }
