@@ -22,7 +22,7 @@ const AboutPage = async () => {
     return (
         <div>
             <h1 className={`${playpen_Sans.className}`}>Hello, I am about page</h1>
-            <h1 className='text-xl text-red-500 font-bold'>Time: {getTime}</h1>
+            {/* <h1 className='text-xl text-red-500 font-bold'>Time: {getTime}</h1> */}
         </div>
     );
 };
