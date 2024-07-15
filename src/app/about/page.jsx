@@ -11,14 +11,14 @@ export const metadata = {
     keywords: ['web developer, mern stack developer, full stack developer']
 };
 
-const getLocalTime = async () => {
-    const res = await fetch('http://localhost:3000/time', {cache: 'no-store'});
-    const data = await res.json();
-    return data.currentTime;
-}
+// const getLocalTime = async () => {
+//     const res = await fetch('http://localhost:3000/time', {cache: 'no-store'});
+//     const data = await res.json();
+//     return data.currentTime;
+// }
 
 const AboutPage = async () => {
-    const getTime = await getLocalTime();
+    // const getTime = await getLocalTime();
     return (
         <div>
             <h1 className={`${playpen_Sans.className}`}>Hello, I am about page</h1>
